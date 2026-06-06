@@ -4,8 +4,8 @@ build-backend = "hatchling.build"
 
 [project]
 name = "solana-trading-bot"
-version = "0.1.0"
-description = "Solana DEX trading bot — AMM swap math, slippage control and cross-pool arbitrage. By Viprasol Tech."
+version = "0.2.0"
+description = "Solana DEX trading bot — AMM swap math, multi-hop routing, slippage reports, N-pool arbitrage scanning and LP analytics. By Viprasol Tech."
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }
