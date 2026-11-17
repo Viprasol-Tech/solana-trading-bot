@@ -84,7 +84,7 @@ router = (
     .add_pool(ConstantProductPool(2e9, 50_000, name="BONK/USDC"), "BONK", "USDC")
 )
 best = router.best_route("SOL", "BONK", amount_in=5, max_hops=3)
-print(best.path, best.amount_out)   # ('SOL', 'USDC', 'BONK') ...
+print(best.path, best.amount_out)  # ('SOL', 'USDC', 'BONK') ...
 
 # 4) Optimally-sized arbitrage across N same-pair pools.
 pools = [
@@ -97,7 +97,7 @@ for op in scan_pools(pools):
 
 # 5) LP impermanent loss vs HODL for a 2x move.
 pos = add_liquidity(pool, base_amount=10, total_shares=1_000)
-print(position_pnl(pos, exit_price=300)["il_fraction"])   # ~ -0.0572
+print(position_pnl(pos, exit_price=300)["il_fraction"])  # ~ -0.0572
 ```
 
 ## 🏗️ Architecture
